@@ -4,12 +4,12 @@ import 'firebase/firestore'
 
 // firebase init
 const firebaseConfig = {
-    apiKey: "AIzaSyBx73NCwDrjYjMtqwGUzzreYHMvQdC51PE",
-    authDomain: "vue-database-e1de5.firebaseapp.com",
-    projectId: "vue-database-e1de5",
-    storageBucket: "vue-database-e1de5.appspot.com",
-    messagingSenderId: "470903640654",
-    appId: "1:470903640654:web:8f4619b29c4600188de91f"
+    apiKey: "AIzaSyDR3ZWYQIp1XPAJWYJ69A7i5Y85HIwQf6s",
+    authDomain: "teammanagement-702ed.firebaseapp.com",
+    projectId: "teammanagement-702ed",
+    storageBucket: "teammanagement-702ed.appspot.com",
+    messagingSenderId: "780019248542",
+    appId: "1:780019248542:web:ea5a3d6274768fe7793a8f"
 }
 firebase.initializeApp(firebaseConfig)
 
