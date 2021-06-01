@@ -2,12 +2,14 @@
   <div id="login">
     <PasswordReset v-if="showPasswordReset" @close="togglePasswordReset()"></PasswordReset>
       <section>
-        <div class="col1">
+        <div class="col1" id="about">
           <h1>Team Management App</h1>
           <p>Welcome to the test site of Team Manangement app. This site will allow team managers to sent task to team members, monitor performance, instantly update appointment letters etc.</p>
         </div>
 
         <div :class="{ 'signup-form': !showLoginForm }" class="col2">
+
+          <!--Log in-->
           <form v-if="showLoginForm" @submit.prevent>
             <h1>Log in to your profile</h1>
               <div>
@@ -28,19 +30,22 @@
               </div>
           </form>
 
+
+
+          <!--Register-->
           <form v-else @submit.prevent>
             <h1>Get Started</h1>
             <div>
               <label for="name">Name</label>
-              <input v-model.trim="signupForm.name" type="text" placeholder="Savvy Apps" id="name" />
+              <input v-model.trim="signupForm.name" type="text" placeholder="Enter Your Name" id="name" />
             </div>
             <div>
-              <label for="title">Title</label>
-              <input v-model.trim="signupForm.title" type="text" placeholder="Company" id="title" />
+              <label for="occupation">Occupation</label>
+              <input v-model.trim="signupForm.occupation" type="text" placeholder="Enter Your Occupation" id="title" />
             </div>
             <div>
               <label for="email2">Email</label>
-              <input v-model.trim="signupForm.email" type="text" placeholder="you@email.com" id="email2" />
+              <input v-model.trim="signupForm.email" type="text" placeholder="Enter Your Email Address" id="email2" />
             </div>
             <div>
               <label for="password2">Password</label>
@@ -71,7 +76,7 @@ export default {
       },
       signupForm: {
         name: '',
-        title: '',
+        occupation: '',
         email: '',
         password: ''
       },
@@ -97,7 +102,7 @@ export default {
         email: this.signupForm.email,
         password: this.signupForm.password,
         name: this.signupForm.name,
-        title: this.signupForm.title
+        title: this.signupForm.occupation
       })
     }
   }

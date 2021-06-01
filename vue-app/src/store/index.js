@@ -113,7 +113,7 @@ const store = new Vuex.Store({
                 // update user object
             const userRef = await fb.usersCollection.doc(userId).update({
                 name: user.name,
-                title: user.title
+                occupation: user.occupation
             })
 
             dispatch('fetchUserProfile', { uid: userId })
