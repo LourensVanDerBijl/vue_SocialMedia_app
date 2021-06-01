@@ -102,7 +102,7 @@ export default {
         email: this.signupForm.email,
         password: this.signupForm.password,
         name: this.signupForm.name,
-        title: this.signupForm.occupation
+        occupation: this.signupForm.occupation
       })
     }
   }

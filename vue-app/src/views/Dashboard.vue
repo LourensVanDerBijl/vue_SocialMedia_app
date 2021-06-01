@@ -7,7 +7,7 @@
       <div class="col1">
         <div class="profile">
           <h5>{{ userProfile.name }}</h5>
-          <p>{{ userProfile.title }}</p>
+          <p>{{ userProfile.occupation }}</p>
           <div class="create-post">
             <p>create a post</p>
             <form @submit.prevent>
